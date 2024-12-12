@@ -41,6 +41,7 @@ public class submitOrderTest  {
         System.out.println("Confirmation Message: " + confirmMessage);
         // Close the browser
         driver.quit();
+        System.out.println("Closed the browser connection");
 
     }
 }
