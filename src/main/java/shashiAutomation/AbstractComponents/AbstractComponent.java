@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import shashiAutomation.pageobjects.CartPage;
-//import shashiAutomation.pageobjects.OrderPage;
+import shashiAutomation.pageobjects.OrderPage;
 
 
 
@@ -50,12 +50,12 @@ public class AbstractComponent {
         return cartPage;
     }
 
-//    public OrderPage goToOrdersPage()
-//    {
-//        orderHeader.click();
-//        OrderPage orderPage = new OrderPage(driver);
-//        return orderPage;
-//    }
+    public OrderPage goToOrdersPage()
+    {
+        orderHeader.click();
+        OrderPage orderPage = new OrderPage(driver);
+        return orderPage;
+    }
 
     public void waitInvisibilityOfWebElement(WebElement ele){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(40));
